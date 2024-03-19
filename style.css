@@ -1,0 +1,157 @@
+body{
+    background:rgb(26, 216, 237);
+    }
+    h1{
+        color:black;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .main{
+        border: 3px solid black;
+        height: 500px;
+        margin-top: 100px;
+        background:black;
+    }
+    
+    .face{
+        background: chartreuse;
+        height: 150px;
+        width: 150px;
+        border-radius: 50% 50% 0 0;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .eyes{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 100px;
+    }
+    
+    .leye,.reye{
+        height: 20px;
+        width: 20px;
+        border-radius: 50%;
+        background: black;
+    }
+    
+    .body1{
+        display: flex;
+        justify-content: space-evenly;
+        width: 250px;
+        margin: auto;
+        margin-top: 10px;
+    }
+    
+    .larm{
+        height: 75px;
+        width: 25px;
+        background: chartreuse;
+        border-radius: 50px;
+        margin-top: 10px;
+    }
+    
+    .center{
+        height: 150px;
+        width: 150px;
+        background: chartreuse;
+        border-radius: 0 0 40% 40%;
+    }
+    
+    .rarm{
+        height: 75px;
+        width: 25px;
+        background: chartreuse;
+        border-radius: 50px;
+        margin-top: 10px;
+    }
+    
+    .legs{
+        display: flex;
+        justify-content: space-evenly;
+        width: 150px;
+        margin: auto;
+        margin-top: -20px;  
+    }
+    
+    .lleg{
+        height: 75px;
+        width: 25px;
+        background: chartreuse;
+        border-radius: 50px;
+    }
+    
+    .rleg{
+        height: 75px;
+        width: 25px;
+        background: chartreuse;
+        border-radius: 50px;
+    }
+    .main:hover .larm{
+        animation:dancel 1s 1s infinite;
+    }
+    @keyframes dancel{
+    0%{transform:rotate(-180deg);transform-origin:bottom};
+    25%{transform:rotate(0deg);transform-origin:bottom};
+    50%{transform:rotate(-180deg);transform-origin:bottom};
+    75%{transform:rotate(0deg);transform-origin:bottom};
+    100%{transform:rotate(90deg);transform-origin:bottom};
+    }
+    .main:hover .rarm{
+        animation:dancer 1s 1s infinite;
+    }
+    @keyframes dancer{
+        0%{transform:rotate(180deg);transform-origin:bottom};
+    25%{transform:rotate(0deg);transform-origin:bottom};
+    50%{transform:rotate(180deg);transform-origin:bottom};
+    75%{transform:rotate(0deg);transform-origin:bottom};
+    100%{transform:rotate(90deg);transform-origin:bottom};
+    }
+    .main:hover .center{
+        animation:dancec 0.3s 1s infinite;
+    }
+    @keyframes dancec{
+    0%{transform:rotate(-45deg)};
+    25%{transform:rotate(0deg)};
+    50%{transform:rotate(-45deg)};
+    75%{transform:rotate(0deg)};
+    100%{transform:rotate(45deg)};
+    }
+    .main:hover .lleg{
+        animation:dancell 1s 1s infinite;
+    }
+    @keyframes dancell{
+        0%{transform:rotate(90deg);transform-origin:top};
+        25%{transform:rotate(0deg);transform-origin:top};
+        50%{transform:rotate(90deg);transform-origin:top};
+        75%{transform:rotate(0deg);transform-origin:top};
+        100%{transform:rotate(90deg);transform-origin:top};
+        }
+        .main:hover .rleg{
+            animation:dancerl 1s 1s infinite;
+        }
+        @keyframes dancerl{
+            0%{transform:rotate(-90deg);transform-origin:top};
+            25%{transform:rotate(0deg);transform-origin:top};
+            50%{transform:rotate(-90deg);transform-origin:top};
+            75%{transform:rotate(45deg);transform-origin:top};
+            100%{transform:rotate(-90deg);transform-origin:top};
+            }
+            .main:hover .face{
+                animation:moveface 0.5s 1s infinite;
+            }
+            @keyframes moveface{
+                0%{transform:scalex(1.1)};
+                25%{transform:scalex(1.1)};
+                50%{transform:scalex(1.1)};
+                100%{transform:scalex(1.1)};
+                }
+                .main:hover {
+                    animation:changebg 1s 1s infinite;
+                }
+                @keyframes changebg{
+                    0%{background:linear-gradient(red, rgb(6, 0, 128), yellow);}
+                    25%{background:linear-gradient(blue, aqua, rgb(53, 209, 81));}
+                    50%{background:linear-gradient(red, green, yellow);}
+                    75%{background:linear-gradient(red, green, yellow);}
+                    100%{background:linear-gradient(blue, aqua, violet);}
+                }
